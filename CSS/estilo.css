@@ -1,0 +1,90 @@
+*{
+    font-family: Georgia, Times, serif;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 1em;
+    line-height: 3em;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: black ;
+    text-align: center;
+    font-size: 1.5em;
+    height: 150px;
+    padding: 1em 4em;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.headercontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0em 3em;
+    transition: all 0.5s linear;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+}
+.navigation ul li a:hover{
+    background-color: gray; 
+}
+
+.footer{
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 300px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3em;
+}
+
+.formulario{
+    font-size: 1.5em;
+}
+
+select{
+    font-size: 24px;
+    background-color: rgb(219, 218, 218);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+input{
+    background-color: rgb(219, 218, 218);
+    border-radius: 5px;
+    padding: 1px 5px;
+}
+
+textarea{
+    background-color: rgb(219, 218, 218);
+}
+main{
+    font-size: 3em;
+    padding-top: 15rem;
+    margin: 0 auto;
+}
+
+main p{
+    font-size: 0.5em;
+    margin: 1.6em;
+}

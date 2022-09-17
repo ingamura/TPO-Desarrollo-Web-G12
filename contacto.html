@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Web</title>
+    <link rel="stylesheet" href="/Proyecto Web/CSS/estilo.css">
+    <link rel="shortcut icon" href="/Proyecto Web/favicon/Logoempresa.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="headercontainer">
+            <a href="index.html"><img src="/Proyecto Web/Img/Logoempresa.png" alt="Logoempresa" width="100px" height="100px"></a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="recursoshumanos.html">Recursos Humanos</a></li>
+                </ul>
+            </nav>
+        </div>
+</header>
+    
+<main class="formulario">
+    <b><label for="area">FORMULARIO DE CONTACTO:</label>
+    <select name="area" id="area">
+        <option value="atencionalcliente">Atencion al cliente</option>
+        <option value="recursoshumano">Recursos humanos</option>
+        <option value="comercial">Comercial</option>
+    </select>
+    <!--FALTA CONF EL ACTION DEL FORM-->
+    <form action="" method="post" target="_self" >
+    <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" size="28" placeholder=" Ingrese su nombre" maxlength="30" required>
+    </p>
+    <p>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" size="28" placeholder=" Ingrese su apellido" maxlength="30" required>
+    </p>
+    <p>
+        <label for="telefono">Telefono:</label>
+        <input type="tel" name="telefono" id="telefono" size="28" placeholder=" Ej: 11 1234-5678" maxlength="20" required>
+    </p>
+    <p>
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" id="email" size="30" placeholder=" Ingrese un email">
+    </p>
+    <p>
+        <label for="comentario">Comentario:</label><br>
+        <textarea name="comentario" id="comentario" cols="50" rows="5" data-ms-editor="false"></textarea>
+    </p>
+    </b>
+    <p>
+    <input type="checkbox" name="info" id="info">
+    <label for="info">Desea que le enviemos mas informacion sobre nuestros productos a su email</label>
+    </p>
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="LIMPIAR">
+    </form>
+</main>
+
+    <footer class="footer">
+        <div>
+            <p>SECTOR COMERCIAL<br>
+                TELÉFONO: +54 (011) 1111 1111<br>
+            </p>
+        </div>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5523.11272306149!2d-58.38263711329945!3d-34.60258171582127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1663373345897!5m2!1ses-419!2sar"
+                width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <p>
+                FÁBRICA, ADMINISTRACIÓN Y VENTAS<br>
+                    *DIRECCION 1111*<br>
+                    CABA - BUENOS AIRES - ARGENTINA<br>
+                    TELÉFONO: +54 (011) 1111 1111<br>
+            </p>
+        </div>
+        <div>
+            <p>SEGUINOS EN NUESTRAS REDES</p>
+            <a href="https://www.facebook.com/" target="_blank"><img src="/Proyecto Web/Img/facebook.png" alt="Facebook" width="65px"></a><br>
+            <a href="https://www.instagram.com/" target="_blank"><img src="/Proyecto Web/Img/instagram.png" alt="Instragam" width="60px"></a>
+        </div>
+</footer>
+</body>
+</html>
