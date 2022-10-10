@@ -1,94 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Web</title>
-    <link rel="stylesheet" href="/Proyecto Web/CSS/estilo.css">
-    <link rel="shortcut icon" href="/Proyecto Web/favicon/Logoempresa.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/ProyectoWeb/CSS/estilo.css">
+    <link rel="stylesheet" href="/ProyectoWeb/CSS/estiloform.css">
+    <link rel="shortcut icon" href="/ProyectoWeb/favicon/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header class="header">
-        <div class="headercontainer">
-            <a href="index.html"><img src="/Proyecto Web/Img/Logoempresa.png" alt="Logoempresa" width="100px" height="100px"></a>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="recursoshumanos.html">Recursos Humanos</a></li>
-                </ul>
-            </nav>
+    <header>
+        <div class="container">
+            <div>
+                <a href="index.html"><img src="/ProyectoWeb/Img/nihongo.png" alt="Logo"></a>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="Destinos.html">Destinos</a></li>
+                        <li><a href="Historia.html">Historia</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-</header>
-    
-<main class="formulario">
-    <b><label for="area">FORMULARIO DE CONTACTO:</label>
-    <select name="area" id="area">
-        <option value="atencionalcliente">Atencion al cliente</option>
-        <option value="recursoshumano">Recursos humanos</option>
-        <option value="comercial">Comercial</option>
-    </select>
-    <!--FALTA CONF EL ACTION DEL FORM-->
-    <form action="" method="post" target="_self" >
-    <p>
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" size="28" placeholder=" Ingrese su nombre" maxlength="30" required>
-    </p>
-    <p>
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido" size="28" placeholder=" Ingrese su apellido" maxlength="30" required>
-    </p>
-    <p>
-        <label for="telefono">Telefono:</label>
-        <input type="tel" name="telefono" id="telefono" size="28" placeholder=" Ej: 11 1234-5678" maxlength="20" required>
-    </p>
-    <p>
-        <label for="email">E-mail:</label>
-        <input type="text" name="email" id="email" size="30" placeholder=" Ingrese un email">
-    </p>
-    <p>
-        <label for="comentario">Comentario:</label><br>
-        <textarea name="comentario" id="comentario" cols="50" rows="5" data-ms-editor="false"></textarea>
-    </p>
-    </b>
-    <p>
-    <input type="checkbox" name="info" id="info">
-    <label for="info">Desea que le enviemos mas informacion sobre nuestros productos a su email</label>
-    </p>
-        <input type="submit" value="ENVIAR">
-        <input type="reset" value="LIMPIAR">
-    </form>
-</main>
+    </header>
 
-    <footer class="footer">
-        <div>
-            <p>SECTOR COMERCIAL<br>
-                TELÉFONO: +54 (011) 1111 1111<br>
-            </p>
-        </div>
-        <div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5523.11272306149!2d-58.38263711329945!3d-34.60258171582127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1663373345897!5m2!1ses-419!2sar"
-                width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div>
-            <p>
-                FÁBRICA, ADMINISTRACIÓN Y VENTAS<br>
+    <main>
+        <section id="cabeza">
+            <h1>CONTACTENOS</h1>
+            <h2>¿Qué espera para reservar su proxima vacación?.<br>No pierda la oportunidad de conocer Japón.</h2>
+            <p>Los campos marcados con (*) son requeridos</p>
+        </section>
+
+        <section>
+            <form action="Contacto.html" class="formulario" id="formulario">
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre*:</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El Nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Apellido*:</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El Apellido tiene que ser de 4 a 16 dígitos y solo puede contener letras</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono*:</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4111-2222">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__email">
+                    <label for="email" class="formulario__label">Correo Electrónico*:</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="email" id="email" placeholder="email@*****.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                </div>
+
+                <div class="formulario__grupo grupo__terminos" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">Acepto los Terminos y Condiciones</label>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p class="formulario__error"><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.</p>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>    
+                </div>
+            </form>
+        </section>
+        <script src="js/formulario.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div>
+                <p>SECTOR COMERCIAL<br>
+                    TELÉFONO: +54 (011) 1111 1111<br>
+                </p>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207446.9226213469!2d139.453786372495!3d35.66818193284364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b857628235d%3A0xcdd8aef709a2b520!2sciudad%20de%20Tokio%2C%20Tokio%2C%20Jap%C3%B3n!5e0!3m2!1ses-419!2sar!4v1665357606263!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+            <div>
+                <p>
+                    Local X<br>
                     *DIRECCION 1111*<br>
                     CABA - BUENOS AIRES - ARGENTINA<br>
-                    TELÉFONO: +54 (011) 1111 1111<br>
-            </p>
+                </p>
+            </div>
+            <div>
+                <p>SEGUINOS EN NUESTRAS REDES</p>
+                <a href="https://www.facebook.com/" target="_blank"><img src="/Proyecto Web/Img/facebook.png"
+                        alt="Facebook" width="65px"></a><br>
+                <a href="https://www.instagram.com/" target="_blank"><img src="/Proyecto Web/Img/instagram.png"
+                        alt="Instragam" width="60px"></a>
+                <p>&copy; Conoce Japon</p>
+            </div>
         </div>
-        <div>
-            <p>SEGUINOS EN NUESTRAS REDES</p>
-            <a href="https://www.facebook.com/" target="_blank"><img src="/Proyecto Web/Img/facebook.png" alt="Facebook" width="65px"></a><br>
-            <a href="https://www.instagram.com/" target="_blank"><img src="/Proyecto Web/Img/instagram.png" alt="Instragam" width="60px"></a>
-        </div>
-</footer>
+    </footer>
 </body>
+
 </html>
