@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Georgia, Times, serif;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background-color: rgb(248, 230, 233);
+}
+
+h1{font-size: 2em;}
+h2{font-size: 1.75em;}
+h3{font-size: 1.5em;}
+p{font-size: 1em ;}
+ul{list-style: none;}
+
+
+
+.container{
+    max-width: 1500px;
+    margin: auto;
+}
+header{
+    background-color:rgba(240, 255, 255, 0.774);
+    background-image: url("/ProyectoWeb/img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 25px;
+}
+
+header img{
+    width: 150px;
+    height: 120px;
+    position: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1em;
+    padding-bottom: 15px;
+}
+
+header nav ul{
+    padding-left: 0;
+}
+
+header nav ul li{
+    padding: 5px;
+}
+
+header a{
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(121, 21, 21);
+    transition: all 0.3s linear;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    padding: 4px 4px;
+}
+
+header nav a:hover{
+    background-color: rgb(148, 5, 5);
+    color: azure;
+}
+footer{
+    background-color: rgb(140, 140, 140);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer iframe{
+    width: 100px;
+    height: 100px;
+}
+
+/*version media*/
+@media (min-width: 760px){
+    header img{
+        width: 170px;
+        height: 140px;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
+    footer .container{
+        background-color: rgb(140, 140, 140);
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 0px;
+    }
+    footer{
+        padding: 10px;
+    }
+    footer iframe{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/*version escritorio*/
+@media (min-width: 1100px){
+    header .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header img{
+        width: 200px;
+        height: 170px;
+    }
+
+    header nav ul{
+        font-size: 1.3em;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+  
+    footer{
+        padding: 30px;
+    }
+    footer iframe{
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 1700px){
+    header nav ul{
+    font-size: 2em;
+    }
+ 
+    footer{
+        padding: 50px;
+    }
+    footer iframe{
+        height: 350px;
+        width: 600px;
+    }
+}
+
+@-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 5));
+              transform: translateX(calc(-250px * 5));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 5));
+              transform: translateX(calc(-250px * 5));
+    }
+    h1{
+        text-align: center;
+    }
+  }
+ 
+  .header{
+    height: 100px;
+    width: 100%;
+  }
+  .slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    scroll-snap-align: center;
+  }
+  .slider::before, .slider::after {
+    
+
+    height: 100px;
+    width: 300px;
+    z-index: 2;
+  }
+  
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 10);
+  
+  }
+  .slider .slide {
+    height: 50px;
+    width: 250px;
+  }
+.comentarios{
+    font-size:  1em;;
+  }
+.lugares{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+img {
+width: 100%;
+max-height: 600px;
+}
+
+  
