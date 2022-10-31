@@ -38,7 +38,7 @@ button:hover{
 }
 header{
     background-color:rgba(240, 255, 255, 0.774);
-    background-image: url("img/header.jpg");
+    background-image: url('../Img/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -98,7 +98,7 @@ header nav a:hover{
     flex-direction: column;
     height: 85vh;
     color: beige;
-    background-image: url("img/fuji.jpg");
+    background-image: url('../Img/fuji.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -151,16 +151,16 @@ header nav a:hover{
 }
 
 .cuadro:first-child{
-    background-image: url("img/Tokyo.jpg");
+    background-image: url('../Img/Tokyo.jpg');
 }
 
 .cuadro:nth-child(2){
-    background-image: url("img/kyoto.jpg");
+    background-image: url('../Img/kyoto.jpg');
 }
 
 
 .cuadro:last-child{
-    background-image: url("img/kanji.jpg");
+    background-image: url('../Img/kanji.jpg');
 }
 
 
@@ -171,7 +171,7 @@ header nav a:hover{
 
 #puntos ul{
     list-style-position: inside;
-    list-style-image: url(img/bullet.png);
+    list-style-image: url('../Img/bullet.png');
     padding: 0 0 0 5px;
 }
 
@@ -234,7 +234,7 @@ footer iframe{
     }
 
     #puntos .japon{
-        background-image: url(img/japon.jpg);
+        background-image: url('../Img/japon.jpg');
         background-size:contain;
         background-repeat: no-repeat;
         background-position: center center;
@@ -245,7 +245,7 @@ footer iframe{
     #puntos ul{
         text-align: initial;
         list-style-position: inside;
-        list-style-image: url(img/bullet.png);
+        list-style-image: url('../Img/bullet.png');
     }
 
     #puntos li{
@@ -326,7 +326,7 @@ footer iframe{
     }
     
     #todojapon .imagejapones{
-        background-image: url("img/tokyo01.jpg");
+        background-image: url('../Img/Tokyo01.jpg');
         background-size: cover;
         background-position: top center;
         height:800px;
@@ -376,7 +376,7 @@ footer iframe{
     }
 
     #puntos .japon{
-        background-image: url(img/japon.jpg);
+        background-image: url('../Img/japon.jpg');
         background-size:contain;
         background-repeat: no-repeat;
         background-position: center center;
