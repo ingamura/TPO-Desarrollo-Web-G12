@@ -1,0 +1,115 @@
+@-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 5));
+              transform: translateX(calc(-250px * 5));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 5));
+              transform: translateX(calc(-250px * 5));
+    }
+    h1{
+        text-align: center;
+    }
+  }
+ 
+  .slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    scroll-snap-align: center;
+  }
+  .slider::before, .slider::after {
+    
+
+    height: 100px;
+    width: 300px;
+    z-index: 2;
+  }
+  
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 10);
+  
+  }
+  .slider .slide {
+    height: 50px;
+    width: 250px;
+  }
+.comentarios{
+    font-size:  1em;;
+  }
+
+.lugares{
+  display: flex;
+  justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+img {
+width: 100%;
+max-height: 600px;
+}
+
+h1{
+    font-size: 4em;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    color: brown;
+}
+
+h2{
+    font-size: 3.5em;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 2em;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.comentarios, p{
+    padding: 50px 50px;
+    margin: 0px 5px;
+    font-size: 1.8em;
+}
+
+.grid-container{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-item2{
+    align-self: center;
+}
+
+.historia{
+    width: 800px;
+    height: 600px;
+    margin: 0;
+    position: center;
+}
